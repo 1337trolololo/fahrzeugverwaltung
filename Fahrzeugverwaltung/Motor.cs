@@ -16,7 +16,7 @@ namespace BBW.Fahrzeugverwaltung
 
         public uint Leistung { get; set; }
         public uint Hubraum { get; set; }
-
+        //TEST
         
     }
 }
