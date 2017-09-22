@@ -15,7 +15,7 @@ namespace BBW.Fahrzeugverwaltung
 
         public uint gefahreneKilometer;
 
-        public Motor Motor { get; set; };
+        public Motor Motor { get; set; }
 
         /// <summary>
         /// gefahrene Kilometer des PKWs
@@ -26,6 +26,11 @@ namespace BBW.Fahrzeugverwaltung
             private set { gefahreneKilometer = value; }
         }
 
+        public PKW(uint radanzahl, uint sitzplaetze, uint gefahreneKilometer, Motor motor) : base(radanzahl, sitzplaetze)
+        {
+            GefahreneKilometer = gefahreneKilometer;
+            Motor = motor;
+        }
 
 
     }
